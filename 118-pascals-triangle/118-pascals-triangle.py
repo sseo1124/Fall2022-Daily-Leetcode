@@ -8,5 +8,6 @@ class Solution:
                     current.append(1)
                 else:
                     current.append(output[-1][j-1] + output[-1][j])
+                    # current row[j] = last row[j-1] + last row[j]
             output.append(current)
         return output
